@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VeciConecta | Comunidad conectada</title>
+  <meta name="description" content="VeciConecta es la plataforma de la comunidad para aprender juntos, reportar problemas y cuidar nuestro barrio.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="site-header">
+
+    <!-- Franja superior -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <span class="topbar__tag">Comunidad conectada</span>
+        <ul class="topbar__links">
+          <li><a href="paginas/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Franja del logo y botones -->
+    <div class="brandbar">
+      <div class="container brandbar__inner">
+        <a class="brand" href="index.html" aria-label="VeciConecta, ir al inicio">
+          <img src="images/logo.png" alt="Logo de VeciConecta" width="190" height="96">
+        </a>
+        <div class="brandbar__actions">
+          <a class="btn btn--primary" href="paginas/reportes.html">Reportar un problema</a>
+          <a class="btn btn--outline" href="paginas/modulos.html">Ir a los módulos</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+          <span>Menú</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú principal -->
+    <nav class="mainnav" aria-label="Menú principal">
+      <ul class="mainnav__list container" id="menu-principal">
+        <li><a class="mainnav__link" href="index.html" aria-current="page">Inicio</a></li>
+        <li><a class="mainnav__link" href="#aviso">Avisos</a></li>
+        <li><a class="mainnav__link" href="#acerca">Acerca de</a></li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Información <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="paginas/informacion.html#ciberseguridad">Ciberseguridad</a></li>
+            <li><a href="paginas/informacion.html#ambiente">Cuidado del ambiente</a></li>
+            <li><a href="paginas/informacion.html#convivencia">Convivencia</a></li>
+            <li><a href="paginas/informacion.html">Ver toda la información</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Módulos educativos <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="paginas/modulos.html#modulo-1">Residuos y reciclaje</a></li>
+            <li><a href="paginas/modulos.html#modulo-7">Seguridad digital</a></li>
+            <li><a href="paginas/modulos.html">Todos los módulos</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Reportes <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="paginas/reportes.html#nuevo">Crear un reporte</a></li>
+            <li><a href="paginas/reportes.html#consejos">Consejos para reportar</a></li>
+          </ul>
+        </li>
+
+        <li><a class="mainnav__link" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== PORTADA ===== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Un barrio mejor se construye entre vecinos</h1>
+          <p class="hero__lead">VeciConecta es el espacio de nuestra comunidad para aprender cosas útiles, avisar cuando algo no está bien y cuidar juntos el lugar donde vivimos.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="paginas/reportes.html">Reportar un problema</a>
+            <a class="btn btn--ghost btn--lg" href="#acerca">Conocer más</a>
+          </div>
+        </div>
+
+        <!-- Ilustración inspirada en el logo -->
+        <div class="hero__art" aria-hidden="true">
+          <svg viewBox="0 0 480 380" role="img" focusable="false">
+            <path class="art-arc" d="M70 190 C 90 70, 330 20, 400 150"/>
+            <g class="art-wifi">
+              <circle cx="405" cy="64" r="12"/>
+              <path d="M385 40 a30 30 0 0 1 42 4" />
+              <path d="M372 24 a50 50 0 0 1 70 8" />
+            </g>
+            <path class="art-hill" d="M0 330 Q 240 250 480 330 L480 380 L0 380 Z"/>
+            <!-- casas -->
+            <g class="art-house">
+              <path d="M70 300 V210 L125 170 L180 210 V300 Z"/>
+              <path d="M300 300 V210 L355 170 L410 210 V300 Z"/>
+              <path d="M170 300 V170 L240 118 L310 170 V300 Z"/>
+            </g>
+            <g class="art-window">
+              <rect x="222" y="160" width="36" height="36"/>
+              <rect x="106" y="224" width="26" height="26"/>
+              <rect x="340" y="224" width="26" height="26"/>
+            </g>
+            <!-- personas -->
+            <g>
+              <circle class="art-p1" cx="195" cy="285" r="22"/>
+              <circle class="art-p1" cx="285" cy="285" r="22"/>
+              <circle class="art-p2" cx="240" cy="262" r="26"/>
+            </g>
+            <!-- árboles -->
+            <g class="art-tree">
+              <rect x="40" y="290" width="8" height="40"/>
+              <circle cx="44" cy="272" r="30"/>
+              <rect x="436" y="290" width="8" height="40"/>
+              <circle cx="440" cy="272" r="30"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOTICIA PRINCIPAL ===== -->
+    <section class="news" id="aviso" aria-labelledby="aviso-titulo">
+      <div class="container">
+
+        <article class="news__feature">
+          <figure class="news__media">
+            <img src="images/recoleccion-basuras.jpg" alt="Camión recolector de residuos y operario sacando una bolsa frente a un edificio del sector" width="1200" height="675">
+            <span class="news__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 3h6l1 2h4v2H4V5h4l1-2zM6 9h12l-1 11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9zm4 2v8h1.5v-8H10zm2.5 0v8H14v-8h-1.5z"/></svg>
+            </span>
+          </figure>
+
+          <div class="news__body">
+            <div class="news__tags">
+              <span class="tag tag--alert">Aviso importante</span>
+              <span class="tag">Información comunitaria</span>
+            </div>
+            <h2 id="aviso-titulo">¡Atención vecinos! Horarios y recomendaciones para la recolección de basuras</h2>
+            <p>Se informa a todos los residentes del sector que el servicio de recolección de residuos sólidos se realizará los siguientes días:</p>
+            <ul class="days" aria-label="Días de recolección">
+              <li>Martes</li>
+              <li>Jueves</li>
+              <li>Sábado</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="news__details">
+          <div class="note">
+            <h3>¿Dónde se deben colocar las bolsas?</h3>
+            <p>Los residuos deben sacarse y colocarse exclusivamente al frente de cada vivienda, en un lugar visible y accesible para el personal encargado de la recolección. El servicio recogerá únicamente las bolsas que se encuentren ubicadas frente a las casas.</p>
+          </div>
+          <div class="note note--warn">
+            <h3>¡Cuidado! Está prohibido dejar basura en el separador de la avenida</h3>
+            <p>No está permitido depositar bolsas de basura, escombros ni otros residuos en el separador de la avenida, zonas verdes, andenes o espacios públicos. Estas prácticas generan contaminación, malos olores, atraen animales y afectan la imagen y la salubridad del sector.</p>
+          </div>
+          <div class="note">
+            <h3>Posibles sanciones</h3>
+            <p>El incumplimiento de las disposiciones sobre disposición inadecuada de residuos podrá dar lugar a medidas correctivas y multas, de acuerdo con la normativa vigente y las autoridades competentes.</p>
+          </div>
+        </div>
+
+        <p class="news__closing">Entre todos podemos mantener nuestro barrio limpio y agradable. Respetar los horarios y utilizar correctamente los puntos de recolección es responsabilidad de cada vecino. ¡Cuidar nuestro sector es compromiso de todos!</p>
+
+      </div>
+    </section>
+
+    <!-- ===== ACERCA DE ===== -->
+    <section class="about" id="acerca" aria-labelledby="acerca-titulo">
+      <div class="container about__inner">
+        <div class="about__intro">
+          <h2 id="acerca-titulo">Acerca de VeciConecta</h2>
+          <p>Esta página nació para que los vecinos tengamos un lugar propio donde informarnos, aprender y participar. No es una página de una empresa ni de una institución: es de la comunidad y se construye con lo que cada persona aporta.</p>
+          <p>Aquí puedes leer información clara sobre temas que nos afectan a todos, practicar con quizzes cortos y avisar de forma sencilla cuando hay un problema en el barrio.</p>
+        </div>
+
+        <ul class="pillars">
+          <li class="pillar pillar--blue">
+            <h3>Conectar</h3>
+            <p>Un punto de encuentro para que los vecinos se mantengan al tanto de lo que pasa en la comunidad.</p>
+          </li>
+          <li class="pillar pillar--green">
+            <h3>Aprender</h3>
+            <p>Información y módulos tipo quiz sobre ciberseguridad, cuidado del ambiente y más temas útiles.</p>
+          </li>
+          <li class="pillar pillar--navy">
+            <h3>Cuidar</h3>
+            <p>Un formulario para reportar daños, riesgos o situaciones que necesitan atención.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== QUÉ PUEDES HACER ===== -->
+    <section class="explore" aria-labelledby="explorar-titulo">
+      <div class="container">
+        <h2 id="explorar-titulo">Qué puedes hacer aquí</h2>
+
+        <ul class="explore__list">
+          <li class="explore__item explore__item--blue">
+            <div>
+              <h3>Leer información educativa</h3>
+              <p>Artículos breves y fáciles de entender sobre temas de interés para todos.</p>
+            </div>
+            <a class="explore__link" href="paginas/informacion.html">Ir a información</a>
+          </li>
+          <li class="explore__item explore__item--green">
+            <div>
+              <h3>Practicar con módulos y quizzes</h3>
+              <p>Pon a prueba lo que sabes sobre ciberseguridad, ambiente y otros temas.</p>
+            </div>
+            <a class="explore__link" href="paginas/modulos.html">Ir a los módulos</a>
+          </li>
+          <li class="explore__item explore__item--navy">
+            <div>
+              <h3>Reportar un problema</h3>
+              <p>Cuéntanos qué está pasando en tu calle o en tu zona para que se pueda atender.</p>
+            </div>
+            <a class="explore__link" href="paginas/reportes.html">Crear un reporte</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="site-footer" id="contacto">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="images/logo.png" alt="VeciConecta" width="150" height="76">
+        <p>Una página hecha por y para la comunidad.</p>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Secciones</h2>
+        <ul>
+          <li><a href="paginas/informacion.html">Información</a></li>
+          <li><a href="paginas/modulos.html">Módulos educativos</a></li>
+          <li><a href="paginas/reportes.html">Reportes</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Contacto</h2>
+        <p>Aquí irán los datos de contacto de la comunidad.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="anio">2026</span> VeciConecta. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reportar un problema | VeciConecta</title>
+  <meta name="description" content="Formulario para que los vecinos reporten problemas de la comunidad con VeciConecta.">
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/reportes.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="site-header">
+
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <span class="topbar__tag">Comunidad conectada</span>
+        <ul class="topbar__links">
+          <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+          <li><a href="../index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="brandbar">
+      <div class="container brandbar__inner">
+        <a class="brand" href="../index.html" aria-label="VeciConecta, ir al inicio">
+          <img src="../images/logo.png" alt="Logo de VeciConecta" width="190" height="96">
+        </a>
+        <div class="brandbar__actions">
+          <a class="btn btn--primary" href="reportes.html">Reportar un problema</a>
+          <a class="btn btn--outline" href="modulos.html">Ir a los módulos</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+          <span>Menú</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mainnav" aria-label="Menú principal">
+      <ul class="mainnav__list container" id="menu-principal">
+        <li><a class="mainnav__link" href="../index.html">Inicio</a></li>
+        <li><a class="mainnav__link" href="../index.html#aviso">Avisos</a></li>
+        <li><a class="mainnav__link" href="../index.html#acerca">Acerca de</a></li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Información <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="informacion.html#ciberseguridad">Ciberseguridad</a></li>
+            <li><a href="informacion.html#ambiente">Cuidado del ambiente</a></li>
+            <li><a href="informacion.html#convivencia">Convivencia</a></li>
+            <li><a href="informacion.html">Ver toda la información</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Módulos educativos <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="modulos.html#modulo-1">Residuos y reciclaje</a></li>
+            <li><a href="modulos.html#modulo-7">Seguridad digital</a></li>
+            <li><a href="modulos.html">Todos los módulos</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false" aria-current="page">
+            Reportes <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="reportes.html#nuevo">Crear un reporte</a></li>
+            <li><a href="reportes.html#consejos">Consejos para reportar</a></li>
+          </ul>
+        </li>
+
+        <li><a class="mainnav__link" href="../index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main id="contenido">
+
+    <!-- ===== ENCABEZADO DE LA PÁGINA ===== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="page-hero__text">
+          <h1>Reportar un problema</h1>
+          <p class="page-hero__lead">Cuéntanos qué está pasando en tu sector. Completa tus datos, explica el motivo del reporte y, si lo tienes, adjunta una foto o un documento como apoyo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMULARIO ===== -->
+    <section class="report" aria-label="Formulario de reporte">
+      <div class="container report__layout">
+
+        <div class="report__main" id="nuevo">
+
+          <form class="report-form" id="form-reporte" novalidate>
+            <p class="report-form__note">Los campos marcados con <span aria-hidden="true">*</span><span class="visually-hidden">un asterisco</span> son obligatorios.</p>
+
+            <!-- Datos personales -->
+            <fieldset class="fieldset">
+              <legend>Tus datos</legend>
+
+              <div class="field">
+                <label for="nombre">Nombre completo <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" maxlength="80" required aria-describedby="error-nombre">
+                <p class="field__error" id="error-nombre" hidden></p>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="tipo-documento">Tipo de documento <span class="req" aria-hidden="true">*</span></label>
+                  <select id="tipo-documento" name="tipo-documento" required aria-describedby="error-tipo-documento">
+                    <option value="">Selecciona una opción</option>
+                    <option value="cedula">Cédula de ciudadanía</option>
+                    <option value="tarjeta">Tarjeta de identidad</option>
+                    <option value="extranjeria">Cédula de extranjería</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <p class="field__error" id="error-tipo-documento" hidden></p>
+                </div>
+
+                <div class="field">
+                  <label for="numero-documento">Número de documento <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" id="numero-documento" name="numero-documento" autocomplete="off" maxlength="20" required aria-describedby="ayuda-numero error-numero-documento">
+                  <p class="field__hint" id="ayuda-numero">Escríbelo sin puntos ni espacios.</p>
+                  <p class="field__error" id="error-numero-documento" hidden></p>
+                </div>
+              </div>
+
+              <div class="field" id="campo-otro" hidden>
+                <label for="tipo-otro">¿Qué tipo de documento es? <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="tipo-otro" name="tipo-otro" maxlength="40" aria-describedby="error-tipo-otro">
+                <p class="field__error" id="error-tipo-otro" hidden></p>
+              </div>
+            </fieldset>
+
+            <!-- Datos del reporte -->
+            <fieldset class="fieldset">
+              <legend>Tu reporte</legend>
+
+              <div class="field">
+                <label for="motivo">Motivo del reporte <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="motivo" name="motivo" rows="6" maxlength="1000" required aria-describedby="ayuda-motivo error-motivo"></textarea>
+                <div class="field__meta">
+                  <p class="field__hint" id="ayuda-motivo">Describe qué ocurre, en qué lugar y desde cuándo.</p>
+                  <p class="field__counter" id="contador-motivo" aria-hidden="true">0 / 1000</p>
+                </div>
+                <p class="field__error" id="error-motivo" hidden></p>
+              </div>
+
+              <div class="field">
+                <span class="field__label">Archivo de apoyo <span class="optional">(opcional)</span></span>
+
+                <div class="dropzone" id="dropzone">
+                  <input type="file" id="archivo" name="archivo" class="visually-hidden" accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf" aria-describedby="ayuda-archivo error-archivo">
+                  <label for="archivo" class="dropzone__label">
+                    <svg class="dropzone__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l5 5h-3.5v6h-3V8H7l5-5zM5 17h14v3H5v-3z"/></svg>
+                    <span class="dropzone__title">Arrastra un archivo aquí o <span class="dropzone__link">selecciónalo desde tu dispositivo</span></span>
+                    <span class="dropzone__hint" id="ayuda-archivo">Formatos JPG, PNG o PDF. Tamaño máximo: 5 MB.</span>
+                  </label>
+                </div>
+
+                <div class="file-item" id="archivo-item" hidden>
+                  <div class="file-item__thumb" id="archivo-miniatura" aria-hidden="true"></div>
+                  <div class="file-item__info">
+                    <p class="file-item__name" id="archivo-nombre"></p>
+                    <p class="file-item__size" id="archivo-tamano"></p>
+                  </div>
+                  <button type="button" class="file-item__remove" id="archivo-quitar">Quitar archivo</button>
+                </div>
+
+                <p class="field__error" id="error-archivo" hidden></p>
+              </div>
+            </fieldset>
+
+            <!-- Autorización -->
+            <div class="field field--check">
+              <input type="checkbox" id="consentimiento" name="consentimiento" required aria-describedby="error-consentimiento">
+              <label for="consentimiento">Autorizo el uso de mis datos personales únicamente para gestionar este reporte. <span class="req" aria-hidden="true">*</span></label>
+              <p class="field__error" id="error-consentimiento" hidden></p>
+            </div>
+
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary btn--lg" id="btn-enviar">Enviar reporte</button>
+              <button type="reset" class="btn btn--ghost btn--lg">Limpiar formulario</button>
+            </div>
+            <p class="form__status" id="estado-formulario" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- Confirmación (se muestra después de enviar) -->
+          <div class="report-success" id="reporte-exito" hidden tabindex="-1">
+            <div class="report-success__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9.5 16.2L5.3 12l-1.8 1.8 6 6 11-11-1.8-1.8-9.2 9.2z"/></svg>
+            </div>
+            <h2>Reporte registrado</h2>
+            <p>Gracias por avisar, <strong id="exito-nombre"></strong>. Tu reporte quedó registrado con este código de referencia:</p>
+            <p class="report-success__code" id="exito-codigo"></p>
+            <p>Conserva el código como referencia de tu reporte.</p>
+            <button type="button" class="btn btn--primary" id="exito-nuevo">Hacer otro reporte</button>
+          </div>
+
+        </div>
+
+        <!-- Panel lateral -->
+        <aside class="report__aside" id="consejos" aria-label="Consejos para reportar">
+          <div class="aside-card">
+            <h2>Consejos para un buen reporte</h2>
+            <ul class="tips">
+              <li>Explica qué ocurre, dónde y desde cuándo.</li>
+              <li>Sé claro y respetuoso. Evita acusar a personas sin pruebas.</li>
+              <li>Adjunta una foto o un documento que ayude a entender la situación.</li>
+              <li>Haz un reporte por cada situación.</li>
+            </ul>
+          </div>
+
+          <div class="aside-card aside-card--warn">
+            <h2>Este formulario no es para emergencias</h2>
+            <p>Si hay un riesgo inmediato para las personas, llama primero a la línea de emergencias 123.</p>
+          </div>
+
+          <div class="aside-card">
+            <h2>Sobre tus datos</h2>
+            <p>Te pedimos tu nombre y documento solo para identificar el reporte. No los publicaremos en la página.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../images/logo.png" alt="VeciConecta" width="150" height="76">
+        <p>Una página hecha por y para la comunidad.</p>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Secciones</h2>
+        <ul>
+          <li><a href="informacion.html">Información</a></li>
+          <li><a href="modulos.html">Módulos educativos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Contacto</h2>
+        <p>Aquí irán los datos de contacto de la comunidad.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="anio">2026</span> VeciConecta. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reportes.js"></script>
+</body>
+</html>

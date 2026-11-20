@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Información para la comunidad | VeciConecta</title>
+  <meta name="description" content="Artículos educativos de VeciConecta sobre ciberseguridad, cuidado del ambiente, convivencia y salud y prevención.">
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/informacion.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="site-header">
+
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <span class="topbar__tag">Comunidad conectada</span>
+        <ul class="topbar__links">
+          <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+          <li><a href="../index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="brandbar">
+      <div class="container brandbar__inner">
+        <a class="brand" href="../index.html" aria-label="VeciConecta, ir al inicio">
+          <img src="../images/logo.png" alt="Logo de VeciConecta" width="190" height="96">
+        </a>
+        <div class="brandbar__actions">
+          <a class="btn btn--primary" href="reportes.html">Reportar un problema</a>
+          <a class="btn btn--outline" href="modulos.html">Ir a los módulos</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+          <span>Menú</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mainnav" aria-label="Menú principal">
+      <ul class="mainnav__list container" id="menu-principal">
+        <li><a class="mainnav__link" href="../index.html">Inicio</a></li>
+        <li><a class="mainnav__link" href="../index.html#aviso">Avisos</a></li>
+        <li><a class="mainnav__link" href="../index.html#acerca">Acerca de</a></li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false" aria-current="page">
+            Información <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="informacion.html#ciberseguridad">Ciberseguridad</a></li>
+            <li><a href="informacion.html#ambiente">Cuidado del ambiente</a></li>
+            <li><a href="informacion.html#convivencia">Convivencia</a></li>
+            <li><a href="informacion.html">Ver toda la información</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Módulos educativos <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="modulos.html#modulo-1">Residuos y reciclaje</a></li>
+            <li><a href="modulos.html#modulo-7">Seguridad digital</a></li>
+            <li><a href="modulos.html">Todos los módulos</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Reportes <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="reportes.html#nuevo">Crear un reporte</a></li>
+            <li><a href="reportes.html#consejos">Consejos para reportar</a></li>
+          </ul>
+        </li>
+
+        <li><a class="mainnav__link" href="../index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main id="contenido">
+
+    <!-- ===== ENCABEZADO DE LA PÁGINA ===== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="page-hero__text">
+          <h1>Información para la comunidad</h1>
+          <p class="page-hero__lead">Artículos breves y claros sobre temas que nos afectan a todos. Léelos con calma, compártelos con tu familia y después ponte a prueba en los módulos educativos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ÍNDICE DE TEMAS ===== -->
+    <nav class="topics" aria-label="Temas de información">
+      <div class="container">
+        <ul class="topics__list">
+          <li><a href="#ciberseguridad">Ciberseguridad</a></li>
+          <li><a href="#ambiente">Cuidado del ambiente</a></li>
+          <li><a href="#convivencia">Convivencia</a></li>
+          <li><a href="#salud">Salud y prevención</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== CIBERSEGURIDAD ===== -->
+    <section class="topic topic--blue" id="ciberseguridad" aria-labelledby="ciberseguridad-titulo">
+      <div class="container">
+        <header class="topic__header">
+          <span class="topic__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>
+          </span>
+          <div class="topic__intro">
+            <h2 id="ciberseguridad-titulo">Ciberseguridad</h2>
+            <p>Gran parte de nuestra vida pasa hoy por el celular. Conocer unas pocas reglas básicas ayuda a evitar estafas y a proteger los datos de toda la familia.</p>
+          </div>
+          <a class="btn btn--outline" href="modulos.html#modulo-7">Practicar con el módulo 7</a>
+        </header>
+
+        <div class="articles">
+          <article class="article">
+            <h3>Cómo reconocer un mensaje fraudulento</h3>
+            <p>Quienes intentan estafar buscan que actuemos rápido y sin pensar. Suelen usar premios, supuestos problemas con una cuenta bancaria u ofertas falsas para obtener datos personales.</p>
+            <ul class="tips">
+              <li>Piden claves, códigos de verificación o datos bancarios.</li>
+              <li>Generan urgencia, como "tienes pocas horas" o "tu cuenta será bloqueada".</li>
+              <li>Llegan desde números o correos desconocidos, con enlaces extraños o acortados.</li>
+              <li>Ofrecen premios o dinero por algo en lo que no participaste.</li>
+            </ul>
+            <p class="article__note">Ante la duda, no respondas ni abras el enlace. Comunícate con la entidad por sus canales oficiales.</p>
+          </article>
+
+          <article class="article">
+            <h3>Contraseñas seguras y verificación en dos pasos</h3>
+            <p>Una contraseña débil o repetida es una puerta abierta: si alguien descubre una, puede probarla en todas tus demás cuentas.</p>
+            <ul class="tips">
+              <li>Usa contraseñas largas, por ejemplo una frase fácil de recordar para ti.</li>
+              <li>Utiliza una contraseña distinta para cada cuenta importante.</li>
+              <li>Activa la verificación en dos pasos en el correo, las redes sociales y la banca.</li>
+              <li>Nunca compartas tus contraseñas ni los códigos que llegan por mensaje.</li>
+            </ul>
+          </article>
+
+          <article class="article">
+            <h3>Cuida tu información en redes y mensajería</h3>
+            <p>Lo que publicamos puede ser usado por otras personas para suplantarnos o para saber cuándo no estamos en casa.</p>
+            <ul class="tips">
+              <li>Revisa quién puede ver tus publicaciones y limita la visibilidad de tu perfil.</li>
+              <li>No publiques fotos de documentos, tarjetas ni tu ubicación en tiempo real.</li>
+              <li>Verifica una noticia o cadena antes de reenviarla.</li>
+              <li>Si un familiar te pide dinero por mensaje, confirma llamándolo directamente.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CUIDADO DEL AMBIENTE ===== -->
+    <section class="topic topic--green topic--alt" id="ambiente" aria-labelledby="ambiente-titulo">
+      <div class="container">
+        <header class="topic__header">
+          <span class="topic__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2.5c3.5 4.4 6 7.6 6 11a6 6 0 0 1-12 0c0-3.4 2.5-6.6 6-11z"/></svg>
+          </span>
+          <div class="topic__intro">
+            <h2 id="ambiente-titulo">Cuidado del ambiente</h2>
+            <p>Cuidar el ambiente empieza en casa. Pequeños hábitos, repetidos por todo el barrio, reducen la contaminación y también los gastos del hogar.</p>
+          </div>
+          <a class="btn btn--outline" href="modulos.html#modulo-1">Practicar con el módulo 1</a>
+        </header>
+
+        <div class="articles">
+          <article class="article">
+            <h3>Separar los residuos en la fuente</h3>
+            <p>Separar desde casa facilita que los materiales se aprovechen y reduce la cantidad de residuos que terminan en el relleno sanitario. En Colombia se usa un código de colores para las bolsas.</p>
+            <ul class="tips">
+              <li><strong>Bolsa blanca:</strong> residuos aprovechables limpios y secos, como papel, cartón, plástico, vidrio y metal.</li>
+              <li><strong>Bolsa negra:</strong> residuos no aprovechables, como papel higiénico, servilletas usadas o empaques sucios.</li>
+              <li><strong>Bolsa verde:</strong> residuos orgánicos aprovechables, como restos de comida, cáscaras y residuos de jardín.</li>
+              <li>Saca las bolsas frente a tu vivienda y solo en los días de recolección.</li>
+            </ul>
+          </article>
+
+          <article class="article">
+            <h3>Ahorro de agua en el hogar</h3>
+            <p>El agua potable es un recurso limitado y llevarla hasta cada casa tiene un costo. Pequeños cambios en la rutina hacen una gran diferencia.</p>
+            <ul class="tips">
+              <li>Repara las llaves y sanitarios que goteen o pierdan agua.</li>
+              <li>Cierra la llave mientras te cepillas los dientes o enjabonas la loza.</li>
+              <li>Procura duchas cortas y reutiliza el agua para limpiar o regar.</li>
+              <li>Si ves una fuga en la calle, repórtala a la entidad encargada.</li>
+            </ul>
+          </article>
+
+          <article class="article">
+            <h3>Ahorro de energía</h3>
+            <p>Muchos equipos siguen consumiendo energía aunque no los estemos usando. Con unos hábitos sencillos se reduce el consumo y el valor de la factura.</p>
+            <ul class="tips">
+              <li>Apaga las luces de las habitaciones vacías y aprovecha la luz natural.</li>
+              <li>Cambia los bombillos tradicionales por bombillos LED.</li>
+              <li>Desconecta los cargadores y equipos que no estés usando.</li>
+              <li>Mantén en buen estado los empaques de la nevera y no dejes la puerta abierta.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONVIVENCIA ===== -->
+    <section class="topic topic--navy" id="convivencia" aria-labelledby="convivencia-titulo">
+      <div class="container">
+        <header class="topic__header">
+          <span class="topic__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1.2 13.2l5-5-1.4-1.4-3.6 3.6-1.6-1.6-1.4 1.4 3 3z"/></svg>
+          </span>
+          <div class="topic__intro">
+            <h2 id="convivencia-titulo">Convivencia</h2>
+            <p>Vivir cerca de otras personas implica acuerdos. Con respeto y diálogo, la mayoría de los desacuerdos se resuelven antes de que se conviertan en un problema mayor.</p>
+          </div>
+          <a class="btn btn--outline" href="modulos.html#modulo-3">Practicar con el módulo 3</a>
+        </header>
+
+        <div class="articles">
+          <article class="article">
+            <h3>Cómo resolver un conflicto con un vecino</h3>
+            <p>Responder con agresividad casi nunca soluciona el problema y suele empeorarlo. Estos pasos ayudan a buscar una salida pacífica.</p>
+            <ol class="tips tips--steps">
+              <li>Respira y espera a estar tranquilo antes de hablar.</li>
+              <li>Conversa en privado, con respeto y sin acusar. Explica cómo te afecta la situación.</li>
+              <li>Escucha la versión de la otra persona y busquen un acuerdo juntos.</li>
+              <li>Si no es posible, acude a un líder comunitario o a una instancia de mediación del sector.</li>
+            </ol>
+          </article>
+
+          <article class="article">
+            <h3>Tenencia responsable de mascotas</h3>
+            <p>Quien tiene una mascota es responsable de su bienestar y de que no afecte a los demás vecinos ni a los espacios compartidos.</p>
+            <ul class="tips">
+              <li>Pasea a tu perro con correa y recoge siempre sus excrementos.</li>
+              <li>Mantén al día su vacunación y consulta periódicamente al veterinario.</li>
+              <li>No abandones a tu mascota. Si ya no puedes cuidarla, busca una familia responsable o una fundación.</li>
+              <li>Si encuentras una mascota perdida, ayúdala de forma segura e intenta ubicar a su familia.</li>
+            </ul>
+          </article>
+
+          <article class="article">
+            <h3>Qué hacer ante una situación sospechosa</h3>
+            <p>La seguridad es tarea de todos, pero ninguna situación justifica poner en riesgo nuestra integridad.</p>
+            <ul class="tips">
+              <li>No enfrentes directamente a los responsables.</li>
+              <li>Informa lo que viste a las autoridades competentes. En una emergencia, llama a la línea 123.</li>
+              <li>Da datos concretos: qué ocurrió, dónde y a qué hora.</li>
+              <li>No publiques acusaciones en redes sociales sin verificar la información.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SALUD Y PREVENCIÓN ===== -->
+    <section class="topic topic--blue topic--alt" id="salud" aria-labelledby="salud-titulo">
+      <div class="container">
+        <header class="topic__header">
+          <span class="topic__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7V3z"/></svg>
+          </span>
+          <div class="topic__intro">
+            <h2 id="salud-titulo">Salud y prevención</h2>
+            <p>Muchas enfermedades se previenen con hábitos sencillos en el hogar. El dengue es un buen ejemplo: depende en gran parte de los lugares donde se acumula agua.</p>
+          </div>
+          <a class="btn btn--outline" href="modulos.html#modulo-4">Practicar con el módulo 4</a>
+        </header>
+
+        <div class="articles articles--two">
+          <article class="article">
+            <h3>Cómo evitar que el mosquito se reproduzca</h3>
+            <p>El mosquito <em>Aedes aegypti</em>, que transmite el dengue, pone sus huevos en recipientes con agua estancada, incluso en cantidades pequeñas.</p>
+            <ul class="tips">
+              <li>Elimina el agua acumulada en llantas, envases, baldes y materas.</li>
+              <li>Mantén tapados los tanques y depósitos de agua.</li>
+              <li>Lava los depósitos y cambia con frecuencia el agua de floreros y bebederos de mascotas.</li>
+              <li>Desecha los objetos que ya no uses y puedan juntar agua de lluvia.</li>
+            </ul>
+          </article>
+
+          <article class="article">
+            <h3>Síntomas y qué hacer</h3>
+            <p>El dengue puede comenzar como una fiebre común, pero en algunos casos se complica. Conocer las señales permite actuar a tiempo.</p>
+            <ul class="tips">
+              <li>Los síntomas frecuentes son fiebre alta, dolor de cabeza, dolor detrás de los ojos, dolores musculares y articulares, y erupciones en la piel.</li>
+              <li>Si los presentas, acude a un centro de salud y evita automedicarte, en especial con aspirina o ibuprofeno.</li>
+              <li>Ve de inmediato a urgencias si hay dolor abdominal intenso, vómito persistente, sangrado o mucha somnolencia.</li>
+              <li>Usa repelente y ropa que cubra la piel en zonas con presencia de mosquitos.</li>
+            </ul>
+            <p class="article__note">Esta información es orientativa y no reemplaza la consulta con un profesional de la salud.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../images/logo.png" alt="VeciConecta" width="150" height="76">
+        <p>Una página hecha por y para la comunidad.</p>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Secciones</h2>
+        <ul>
+          <li><a href="informacion.html">Información</a></li>
+          <li><a href="modulos.html">Módulos educativos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Contacto</h2>
+        <p>Aquí irán los datos de contacto de la comunidad.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="anio">2026</span> VeciConecta. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

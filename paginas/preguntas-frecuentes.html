@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preguntas frecuentes | VeciConecta</title>
+  <meta name="description" content="Respuestas a las preguntas más frecuentes sobre VeciConecta, los módulos educativos, los reportes y la convivencia en comunidad.">
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/faq.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="site-header">
+
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <span class="topbar__tag">Comunidad conectada</span>
+        <ul class="topbar__links">
+          <li><a href="preguntas-frecuentes.html" aria-current="page">Preguntas frecuentes</a></li>
+          <li><a href="../index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="brandbar">
+      <div class="container brandbar__inner">
+        <a class="brand" href="../index.html" aria-label="VeciConecta, ir al inicio">
+          <img src="../images/logo.png" alt="Logo de VeciConecta" width="190" height="96">
+        </a>
+        <div class="brandbar__actions">
+          <a class="btn btn--primary" href="reportes.html">Reportar un problema</a>
+          <a class="btn btn--outline" href="modulos.html">Ir a los módulos</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+          <span>Menú</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mainnav" aria-label="Menú principal">
+      <ul class="mainnav__list container" id="menu-principal">
+        <li><a class="mainnav__link" href="../index.html">Inicio</a></li>
+        <li><a class="mainnav__link" href="../index.html#aviso">Avisos</a></li>
+        <li><a class="mainnav__link" href="../index.html#acerca">Acerca de</a></li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Información <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="informacion.html#ciberseguridad">Ciberseguridad</a></li>
+            <li><a href="informacion.html#ambiente">Cuidado del ambiente</a></li>
+            <li><a href="informacion.html#convivencia">Convivencia</a></li>
+            <li><a href="informacion.html">Ver toda la información</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Módulos educativos <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="modulos.html#modulo-1">Residuos y reciclaje</a></li>
+            <li><a href="modulos.html#modulo-7">Seguridad digital</a></li>
+            <li><a href="modulos.html">Todos los módulos</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Reportes <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="reportes.html#nuevo">Crear un reporte</a></li>
+            <li><a href="reportes.html#consejos">Consejos para reportar</a></li>
+          </ul>
+        </li>
+
+        <li><a class="mainnav__link" href="../index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main id="contenido">
+
+    <!-- ===== ENCABEZADO DE LA PÁGINA ===== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="page-hero__text">
+          <h1>Preguntas frecuentes</h1>
+          <p class="page-hero__lead">Respuestas rápidas a las dudas más comunes sobre la página, los módulos, los reportes y la vida en comunidad. Elige un tema y pulsa una pregunta para ver la respuesta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PREGUNTAS ===== -->
+    <section class="faq" aria-label="Preguntas frecuentes">
+      <div class="container faq__layout">
+
+        <div class="faq__filters" role="group" aria-label="Filtrar por tema">
+          <button type="button" class="filter" data-filtro="todas" aria-pressed="true">Todas</button>
+          <button type="button" class="filter" data-filtro="pagina" aria-pressed="false">La página</button>
+          <button type="button" class="filter" data-filtro="modulos" aria-pressed="false">Módulos</button>
+          <button type="button" class="filter" data-filtro="reportes" aria-pressed="false">Reportes</button>
+          <button type="button" class="filter" data-filtro="comunidad" aria-pressed="false">Residuos y convivencia</button>
+        </div>
+
+        <p class="faq__count" id="faq-conteo" aria-live="polite">Mostrando 15 preguntas</p>
+
+        <div class="faq__list" id="faq-lista">
+
+          <!-- La página -->
+          <details class="faq__item faq__item--pagina" data-categoria="pagina">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">La página</span>
+                <span class="faq__question">¿Qué es VeciConecta?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Es la página de nuestra comunidad. Aquí los vecinos pueden leer información útil, practicar con módulos educativos y reportar problemas del sector. No pertenece a una empresa ni a una institución: se construye con el aporte de todos.</p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--pagina" data-categoria="pagina">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">La página</span>
+                <span class="faq__question">¿Necesito crear una cuenta o registrarme?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>No. Puedes leer la información y resolver los módulos sin registrarte. Solo se piden datos personales cuando haces un reporte.</p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--pagina" data-categoria="pagina">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">La página</span>
+                <span class="faq__question">¿Puedo usar la página desde el celular?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Sí. La página se adapta a pantallas de celular y tableta. En el celular, el menú aparece al pulsar el botón "Menú" de la parte superior.</p>
+            </div>
+          </details>
+
+          <!-- Módulos -->
+          <details class="faq__item faq__item--modulos" data-categoria="modulos">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Módulos</span>
+                <span class="faq__question">¿Cómo funcionan los módulos educativos?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Cada módulo tiene una breve introducción y dos preguntas de selección múltiple. Si respondes bien, recibes una felicitación y avanzas. Si fallas, recibes una pista y puedes intentarlo de nuevo.</p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--modulos" data-categoria="modulos">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Módulos</span>
+                <span class="faq__question">¿Se guarda mi progreso?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Sí, pero solo en el navegador del dispositivo que usas. Si borras los datos del navegador o entras desde otro dispositivo, tu progreso no aparecerá.</p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--modulos" data-categoria="modulos">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Módulos</span>
+                <span class="faq__question">¿Puedo repetir un módulo?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Sí, las veces que quieras. La página conserva tu mejor resultado.</p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--modulos" data-categoria="modulos">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Módulos</span>
+                <span class="faq__question">¿Qué temas cubren los módulos?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Hay ocho módulos: manejo de residuos y reciclaje, ahorro de agua, seguridad y convivencia, prevención del dengue, tenencia responsable de mascotas, ahorro de energía, seguridad digital, y participación y cuidado de los espacios públicos.</p>
+              <p><a href="modulos.html">Ir a los módulos educativos</a></p>
+            </div>
+          </details>
+
+          <!-- Reportes -->
+          <details class="faq__item faq__item--reportes" data-categoria="reportes">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Reportes</span>
+                <span class="faq__question">¿Cómo hago un reporte?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Entra a la sección Reportes y completa tu nombre, el tipo y número de documento y el motivo del reporte. Si lo tienes, puedes adjuntar una foto o un documento. Por último, acepta la autorización de uso de datos y pulsa "Enviar reporte".</p>
+              <p><a href="reportes.html">Ir al formulario de reportes</a></p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--reportes" data-categoria="reportes">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Reportes</span>
+                <span class="faq__question">¿Qué archivos puedo adjuntar a un reporte?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Imágenes en formato JPG o PNG y archivos PDF, de hasta 5 MB. Adjuntar un archivo es opcional.</p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--reportes" data-categoria="reportes">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Reportes</span>
+                <span class="faq__question">¿Por qué me piden mi documento de identidad?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Se solicita únicamente para identificar el reporte. Tu nombre y tu documento no se publican en la página.</p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--reportes" data-categoria="reportes">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Reportes</span>
+                <span class="faq__question">¿Puedo usar el formulario en una emergencia?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>No. El formulario no es para emergencias. Si hay un riesgo inmediato para las personas, llama primero a la línea de emergencias 123.</p>
+            </div>
+          </details>
+
+          <!-- Residuos y convivencia -->
+          <details class="faq__item faq__item--comunidad" data-categoria="comunidad">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Residuos y convivencia</span>
+                <span class="faq__question">¿Qué días pasa el camión de la basura?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>El servicio de recolección de residuos pasa los martes, jueves y sábados.</p>
+              <p><a href="../index.html#aviso">Ver el aviso completo en la página de inicio</a></p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--comunidad" data-categoria="comunidad">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Residuos y convivencia</span>
+                <span class="faq__question">¿Dónde debo sacar las bolsas de basura?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Al frente de tu vivienda, en un lugar visible y solo en los días de recolección. No se deben dejar bolsas ni escombros en el separador de la avenida, las zonas verdes, los andenes ni otros espacios públicos.</p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--comunidad" data-categoria="comunidad">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Residuos y convivencia</span>
+                <span class="faq__question">¿De qué color debe ser la bolsa para cada residuo?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Bolsa blanca para los residuos aprovechables, negra para los no aprovechables y verde para los orgánicos aprovechables.</p>
+              <p><a href="informacion.html#ambiente">Ver ejemplos en la sección de cuidado del ambiente</a></p>
+            </div>
+          </details>
+
+          <details class="faq__item faq__item--comunidad" data-categoria="comunidad">
+            <summary>
+              <span class="faq__heading">
+                <span class="faq__tag">Residuos y convivencia</span>
+                <span class="faq__question">¿Qué hago si tengo un conflicto con un vecino?</span>
+              </span>
+              <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 12 8"><path d="M1 1.5l5 5 5-5"/></svg></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Lo primero es buscar el diálogo, con calma y respeto. Evita las agresiones y las discusiones con terceros. Si no logran un acuerdo, puedes acudir a un líder comunitario o a una instancia de mediación del sector.</p>
+              <p><a href="informacion.html#convivencia">Ver los pasos para resolver un conflicto</a></p>
+            </div>
+          </details>
+
+        </div>
+
+        <!-- Cierre -->
+        <div class="faq__more">
+          <h2>¿No encontraste lo que buscabas?</h2>
+          <p>Revisa los artículos de la sección de información o practica con los módulos educativos.</p>
+          <div class="faq__more-actions">
+            <a class="btn btn--primary" href="informacion.html">Ir a Información</a>
+            <a class="btn btn--outline" href="modulos.html">Ir a los módulos</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../images/logo.png" alt="VeciConecta" width="150" height="76">
+        <p>Una página hecha por y para la comunidad.</p>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Secciones</h2>
+        <ul>
+          <li><a href="informacion.html">Información</a></li>
+          <li><a href="modulos.html">Módulos educativos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Contacto</h2>
+        <p>Aquí irán los datos de contacto de la comunidad.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="anio">2026</span> VeciConecta. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/faq.js"></script>
+</body>
+</html>

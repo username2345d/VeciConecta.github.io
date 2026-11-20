@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulos educativos | VeciConecta</title>
+  <meta name="description" content="Módulos educativos de VeciConecta: aprende sobre residuos, agua, convivencia, salud, mascotas, energía, seguridad digital y participación.">
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/modulos.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="site-header">
+
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <span class="topbar__tag">Comunidad conectada</span>
+        <ul class="topbar__links">
+          <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+          <li><a href="../index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="brandbar">
+      <div class="container brandbar__inner">
+        <a class="brand" href="../index.html" aria-label="VeciConecta, ir al inicio">
+          <img src="../images/logo.png" alt="Logo de VeciConecta" width="190" height="96">
+        </a>
+        <div class="brandbar__actions">
+          <a class="btn btn--primary" href="reportes.html">Reportar un problema</a>
+          <a class="btn btn--outline" href="modulos.html">Ir a los módulos</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+          <span>Menú</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mainnav" aria-label="Menú principal">
+      <ul class="mainnav__list container" id="menu-principal">
+        <li><a class="mainnav__link" href="../index.html">Inicio</a></li>
+        <li><a class="mainnav__link" href="../index.html#aviso">Avisos</a></li>
+        <li><a class="mainnav__link" href="../index.html#acerca">Acerca de</a></li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Información <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="informacion.html#ciberseguridad">Ciberseguridad</a></li>
+            <li><a href="informacion.html#ambiente">Cuidado del ambiente</a></li>
+            <li><a href="informacion.html#convivencia">Convivencia</a></li>
+            <li><a href="informacion.html">Ver toda la información</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false" aria-current="page">
+            Módulos educativos <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="modulos.html#modulo-1">Residuos y reciclaje</a></li>
+            <li><a href="modulos.html#modulo-7">Seguridad digital</a></li>
+            <li><a href="modulos.html">Todos los módulos</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="mainnav__link" type="button" aria-expanded="false">
+            Reportes <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="reportes.html#nuevo">Crear un reporte</a></li>
+            <li><a href="reportes.html#consejos">Consejos para reportar</a></li>
+          </ul>
+        </li>
+
+        <li><a class="mainnav__link" href="../index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== ENCABEZADO DE LA PÁGINA ===== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="page-hero__text">
+          <h1>Módulos educativos</h1>
+          <p class="page-hero__lead">Aprende en pocos minutos. Cada módulo tiene una breve introducción y dos preguntas de selección múltiple. Si fallas, recibes una pista y puedes intentarlo de nuevo.</p>
+        </div>
+
+        <div class="progress" id="progreso-contenedor" role="progressbar" aria-label="Módulos completados" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0">
+          <p class="progress__text" id="progreso-texto">0 de 8 módulos completados</p>
+          <div class="progress__track"><span class="progress__bar" id="progreso-barra"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LISTA DE MÓDULOS ===== -->
+    <section class="modules" aria-label="Lista de módulos">
+      <div class="container">
+        <ul class="module-list" id="lista-modulos">
+          <li><noscript>Necesitas activar JavaScript para ver y resolver los módulos.</noscript></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== VENTANA DEL QUIZ ===== -->
+  <dialog class="quiz" id="quiz" aria-labelledby="quiz-titulo">
+    <div class="quiz__header">
+      <h2 class="quiz__title" id="quiz-titulo">Módulo</h2>
+      <button type="button" class="quiz__close" id="quiz-cerrar" aria-label="Cerrar módulo">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="quiz__body" id="quiz-cuerpo"></div>
+  </dialog>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../images/logo.png" alt="VeciConecta" width="150" height="76">
+        <p>Una página hecha por y para la comunidad.</p>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Secciones</h2>
+        <ul>
+          <li><a href="informacion.html">Información</a></li>
+          <li><a href="modulos.html">Módulos educativos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Contacto</h2>
+        <p>Aquí irán los datos de contacto de la comunidad.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="anio">2026</span> VeciConecta. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/modulos-data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/modulos.js"></script>
+</body>
+</html>
